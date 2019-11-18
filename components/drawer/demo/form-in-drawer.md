@@ -45,7 +45,7 @@ class DrawerForm extends React.Component {
           width={720}
           onClose={this.onClose}
           visible={this.state.visible}
-          bodyStyle={{ paddingBottom: 80 }}
+          bodyStyle={{ paddingBottom: 60 }}
         >
           <Form layout="vertical" hideRequiredMark>
             <Row gutter={16}>
@@ -140,10 +140,12 @@ class DrawerForm extends React.Component {
           </Form>
           <div
             style={{
-              position: 'absolute',
+              position: 'fixed',
               right: 0,
               bottom: 0,
-              width: '100%',
+              zIndex: 100,
+              width: 720,
+              height: 55,
               borderTop: '1px solid #e9e9e9',
               padding: '10px 16px',
               background: '#fff',
